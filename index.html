@@ -8,6 +8,9 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
+
   <header class="page-header">
     <nav class="navigation">
       <svg width="145" height="37" viewBox="0 0 145 37" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -29,42 +32,82 @@
           fill="black" />
         <path d="M83.458 0.388916V10.4889L91.0633 0.388916H83.458Z" />
       </svg>
+      <div class="navigation__top">
+        <form class="navigation__form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="navigation__search" type="search" placeholder="Текст поиска">
+          <button class="navigation__btn" type="submit">Найти</button>
+        </form>
 
-      <form class="navigation__form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="navigation__search" type="search" placeholder="Текст поиска">
-      </form>
+        <ul class="navigation__list navigation__user">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Войти</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="navigation__list navigation__user">
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Войти</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Сравнить</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">Корзина</a>
-        </li>
-      </ul>
+      <div class="navigation__top">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+          </li>
+        </ul>
 
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог товаров</a>
-        </li>
-      </ul>
-
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Доставка</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Контакты</a>
-        </li>
-      </ul>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Доставка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
+
+  <!-- MAIN -->
+
+  <main class="main-index">
+    <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
+    <section class="gallery">
+      <div class="gallery__item">
+        <div></div>
+        <img src="gallery__img" alt="Фото квадрокоптера.">
+        <button class="gallery__button gallery__button-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="gallery__button gallery__button-next" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+
+        <ol class="gallery__pagination gallery-pagination">
+          <li class="gallery-pagination__item">
+            <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="gallery-pagination__item">
+            <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="gallery-pagination__item">
+            <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
