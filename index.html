@@ -78,34 +78,77 @@
   <main class="main-index">
     <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
     <section class="gallery">
-      <div class="gallery__item">
-        <div></div>
-        <img src="gallery__img" alt="Фото квадрокоптера.">
+      <h2 class="visually-hidden">Лучшие предложения</h2>
+      <div class="gallery__images">
+        <img src="gallery__image" alt="Фото квадрокоптера.">
         <button class="gallery__button gallery__button-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="gallery__button gallery__button-next" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
-
-        <ol class="gallery__pagination gallery-pagination">
-          <li class="gallery-pagination__item">
-            <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="gallery-pagination__item">
-            <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="gallery-pagination__item">
-            <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
       </div>
+      <div class="gallery__desc">
+        <p class="gallery__title">Порхает как бабочка,<br> жалит как пчела!</p>
+        <p class="gallery__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
+          под стандартную камеру.</p>
+        <div class="gallery__btn-pagination">
+          <button class="gallery__button-more" type="button">Подробнее</button>
+          <ol class="gallery__pagination gallery-pagination">
+            <li class="gallery-pagination__item">
+              <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="gallery-pagination__item">
+              <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="gallery-pagination__item">
+              <button class="gallery-pagination__btn gallery-pagination__btn-current" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <dl class="gallery__features">
+          <dt class="gallery__term">Дальность полета</dt>
+          <dd class="gallery__value">800 м</dd>
+          <dt class="gallery__term"> Радиус поражения</dt>
+          <dd class="gallery__value"> 50 м</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="goods">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="goods__list">
+        <li class="goods__item">
+          <img class="goods__img" src="" alt="">
+          <p class="goods__title">Виртуальная реальность</p>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="" alt="">
+          <p class="goods__title">Моноподы для селфи</p>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="" alt="">
+          <p class="goods__title">Экшн-камеры</p>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="" alt="">
+          <p class="goods__title">Фитнес-браслеты</p>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="" alt="">
+          <p class="goods__title">Умные часы</p>
+        </li>
+        <li class="goods__item">
+          <img class="goods__img" src="" alt="">
+          <p class="goods__title">Квадрокоптеры</p>
+        </li>
+      </ul>
     </section>
   </main>
 </body>
