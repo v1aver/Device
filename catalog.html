@@ -59,8 +59,54 @@
 
   <!-- MAIN -->
 
-  <main>
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-header__title">Моноподы для селфи</h1>
+      <ul class="inner-header__breadcrumbs">
+        <li class="inner-header__item">
+          <a class="inner-header__link" href="index.html">Главная</a>
+        </li>
+        <li class="inner-header__item">
+          <a class="inner-header__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="inner-header__item">
+          <a class="inner-header__link" href="#">Моноподы для селфи</a>
+        </li>
+      </ul>
+    </header>
 
+    <div class="sorting">
+      <p class="sorting__subtitle">Фильтр:</p>
+      <p class="sorting__subtitle">Сортировка:</p>
+      <form class="sorting__form">
+        <select class="sorting__control" aria-label="Сортировка">
+          <option value="" class="3"></option>
+        </select>
+      </form>
+    </div>
+
+    <section class="filter">
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="filter__group">
+          <legend class="filter__title">Стоимость</legend>
+        </fieldset>
+        <fieldset class="filter__group">
+          <legend class="filter__title">Цвет</legend>
+          <label class="filter__control">
+            <input class="filter__input" type="checkbox" name="black">
+            <input class="filter__input" type="checkbox" name="white">
+            <input class="filter__input" type="checkbox" name="blue">
+            <input class="filter__input" type="checkbox" name="red">
+            <input class="filter__input" type="checkbox" name="pink">
+          </label>
+        </fieldset>
+        <fieldset class="filter__group">
+          <legend class="filter__title">Bluetooth</legend>
+        </fieldset>
+        <button class="button filter__button">Показать</button>
+      </form>
+    </section>
   </main>
 
   <!-- FOOTER -->
