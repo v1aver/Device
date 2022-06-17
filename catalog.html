@@ -24,7 +24,10 @@
 
         <ul class="navigation__list navigation__user">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Войти</a>
+            <a class="navigation__link" href="#">Коля Петухов</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--sign-out" href="#">Выйти</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Сравнить</a>
@@ -80,8 +83,12 @@
       <p class="sorting__subtitle">Сортировка:</p>
       <form class="sorting__form">
         <select class="sorting__control" aria-label="Сортировка">
-          <option value="" class="3"></option>
+          <option value="popular" class="3">Популярное</option>
+          <option value="cheap" class="3">Дешевое</option>
+          <option value="expensive" class="3">Дорогое</option>
         </select>
+        <button></button>
+        <button></button>
       </form>
     </div>
 
@@ -93,20 +100,129 @@
         </fieldset>
         <fieldset class="filter__group">
           <legend class="filter__title">Цвет</legend>
-          <label class="filter__control">
-            <input class="filter__input" type="checkbox" name="black">
-            <input class="filter__input" type="checkbox" name="white">
-            <input class="filter__input" type="checkbox" name="blue">
-            <input class="filter__input" type="checkbox" name="red">
-            <input class="filter__input" type="checkbox" name="pink">
-          </label>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="checkbox" name="black" checked>
+                Черный
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="checkbox" name="white" checked>
+                Белый
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="checkbox" name="blue">
+                Синий
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="checkbox" name="red">
+                Красный
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="checkbox" name="pink">
+                Розовый
+              </label>
+            </li>
+          </ul>
+
         </fieldset>
         <fieldset class="filter__group">
           <legend class="filter__title">Bluetooth</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="radio" checked>
+                Есть
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="filter__input" type="radio">
+                Нет
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <button class="button filter__button">Показать</button>
       </form>
+
+      <ul class="product__list">
+        <li class="product__item">
+          <a class="product__link" href="#">
+            <img class="product__img" src="" alt="Любительская селфи-палка.">
+            <div class="product__text">
+              <h3 class="product__title">Любительская селфи-палка</h3>
+              <span class="product__price">500 ₽</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a class="product__link" href="#">
+            <img class="product__img" src="" alt="Профессиональная селфи-палка.">
+            <div class="product__text">
+              <h3 class="product__title">Профессиональная селфи-палка</h3>
+              <span class="product__price">1 500 ₽</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a class="product__link" href="#">
+            <img class="product__img" src="" alt="Непотопляемая селфи-палка.">
+            <div class="product__text">
+              <h3 class="product__title">Непотопляемая селфи-палка</h3>
+              <span class="product__price">2 500₽</span>
+            </div>
+          </a>
+        </li>
+        <li class="product__item">
+          <a class="product__link" href="#">
+            <img class="product__img" src="" alt="Селфи-палка «Следуй за мной».">
+            <div class="product__text">
+              <h3 class="product__title">Селфи-палка «Следуй за мной»</h3>
+              <span class="product__price">1 500 ₽</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="pagination">
+        <button class="pagination__button pagination__button-more">
+          Загрузить ещё
+        </button>
+        <ul class="pagination-list">
+          <li class="paination__item">
+            <a class="pagination__link pagination__prev">Назад</a>
+          </li>
+          <li class="paination__item">
+            <a class="pagination__link" href="">1</a>
+          </li>
+          <li class="paination__item">
+            <a class="pagination__link" href="">2</a>
+          </li>
+          <li class="paination__item">
+            <a class="pagination__link" href="">3</a>
+          </li>
+          <li class="paination__item">
+            <a class="pagination__link" href="">...</a>
+          </li>
+          <li class="paination__item">
+            <a class="pagination__link" href="">15</a>
+          </li>
+          <li class="paination__item">
+            <a class="pagination__link pagination__next">Вперёд</a>
+          </li>
+        </ul>
+      </div>
     </section>
+
   </main>
 
   <!-- FOOTER -->
