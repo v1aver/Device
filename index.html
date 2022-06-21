@@ -34,7 +34,7 @@
         </ul>
       </div>
 
-      <div class="navigation__top">
+      <div class="navigation__bottom">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог товаров</a>
@@ -63,7 +63,7 @@
     <section class="gallery">
       <h2 class="visually-hidden">Лучшие предложения</h2>
       <div class="gallery__images">
-        <img src="gallery__image" width="560" height="560" alt="Фото квадрокоптера.">
+        <img class="gallery__image" src="img/index-quad.png" width="560" height="560" alt="Фото квадрокоптера.">
         <button class="gallery__button gallery__button-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
@@ -104,35 +104,42 @@
       </div>
     </section>
 
+    <!-- Категории товаров -->
+
     <section class="goods">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="goods__list">
         <li class="goods__item">
-          <img class="goods__img" src="/img/logo/logo-vr.svg" alt="">
-          <p class="goods__title">Виртуальная реальность</p>
+          <div class="goods-wrapper">
+            <img class="goods__img" src="/img/logo/logo-vr.svg" alt="">
+          </div>
+
+          <p class="title goods__title">Виртуальная реальность</p>
         </li>
         <li class="goods__item">
           <img class="goods__img" src="/img/logo/logo-monopod.svg" alt="">
-          <p class="goods__title">Моноподы для селфи</p>
+          <p class="title goods__title">Моноподы для селфи</p>
         </li>
         <li class="goods__item">
           <img class="goods__img" src="/img/logo/logo-camera.svg" alt="">
-          <p class="goods__title">Экшн-камеры</p>
+          <p class="title goods__title">Экшн-камеры</p>
         </li>
         <li class="goods__item">
           <img class="goods__img" src="/img/logo/logo-bracelet.svg" alt="">
-          <p class="goods__title">Фитнес-браслеты</p>
+          <p class="title goods__title">Фитнес-браслеты</p>
         </li>
         <li class="goods__item">
           <img class="goods__img" src="/img/logo/logo-watch.svg" alt="">
-          <p class="goods__title">Умные часы</p>
+          <p class="title goods__title">Умные часы</p>
         </li>
         <li class="goods__item">
           <img class="goods__img" src="/img/logo/logo-quad.svg" alt="">
-          <p class="goods__title">Квадрокоптеры</p>
+          <p class="title goods__title">Квадрокоптеры</p>
         </li>
       </ul>
     </section>
+
+    <!-- Доставка, гарантия, кредит -->
 
     <section class="delivery">
       <h2 class="visually-hidden">Доставка, гарантия и кредит</h2>
@@ -149,7 +156,7 @@
       </ul>
       <div class="delivery__text-container">
         <div class="delivery__desc">
-          <p class="delivery__title">Доставка</p>
+          <p class="title delivery__title">Доставка</p>
           <p class="delivery__text">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.
@@ -159,12 +166,16 @@
       </div>
     </section>
 
+    <!-- Редкая доставка -->
+
     <section class="rare-delivery">
       <div class="rare-delivery__logo"></div>
       <div class="rare-delivey__desc">Доставим редкий товар под заказ</div>
     </section>
 
     <div class="about-contacts">
+
+      <!-- О нас -->
 
       <section class="about">
         <h2 class="title about__title">О нас</h2>
@@ -181,6 +192,8 @@
         </ul>
         <button class="button about__button">Подробнее о нас</button>
       </section>
+
+      <!-- Контакты -->
 
       <section class="contacts">
         <h2 class="title contacts__title">Контакты</h2>
@@ -200,8 +213,10 @@
       </section>
     </div>
 
+    <!-- Подпишись на рассылку -->
+
     <section class="email">
-      <h2 class="email__title">Подпишитеь на рассылку</h2>
+      <h2 class="title email__title">Подпишитеь на рассылку</h2>
       <p class="email__desc">
         Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
         спецпредложения и вот это вот всё.
@@ -216,7 +231,7 @@
 
   <!-- FOOTER -->
 
-  <footer class="page__footer">
+  <footer class="page-footer">
     <img class="footer__logo" src="img/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
     <section class="footer__location">
       <h2 class="visually-hidden">Адрес</h2>

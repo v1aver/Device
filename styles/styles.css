@@ -28,3 +28,70 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
+
+.page-header {
+  background-color: #FFE17F;
+}
+
+.navigation__bottom {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.navigation__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.goods__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.gallery__text {
+  color: #444444;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFE17F;
+  /* background-color: transparent; */
+  border: none;
+  text-transform: uppercase;
+}
+
+/* Категории товаров */
+
+.goods-wrapper {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  
+}
+
+.goods__img {
+  display: block;
+}
+
+/* Редкая доставка */
+
+.rare-delivery {
+  background-color: #F0F0F0;
+}
+
+/* Подпишись на рассылку */
+
+.email {
+  background-color: #F0F0F0;
+}
