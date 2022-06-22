@@ -60,6 +60,9 @@
 
   <main class="main-index">
     <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
+
+    <!-- Товары на главной -->
+
     <section class="gallery">
       <h2 class="visually-hidden">Лучшие предложения</h2>
       <div class="gallery__images">
@@ -113,31 +116,81 @@
           <div class="goods-wrapper">
             <img class="goods__img" src="/img/logo/logo-vr.svg" alt="">
           </div>
-
           <p class="title goods__title">Виртуальная реальность</p>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="/img/logo/logo-monopod.svg" alt="">
+          <div class="goods-wrapper">
+            <img class="goods__img" src="/img/logo/logo-monopod.svg" alt="">
+          </div>
           <p class="title goods__title">Моноподы для селфи</p>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="/img/logo/logo-camera.svg" alt="">
+          <div class="goods-wrapper">
+            <img class="goods__img" src="/img/logo/logo-camera.svg" alt="">
+          </div>
           <p class="title goods__title">Экшн-камеры</p>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="/img/logo/logo-bracelet.svg" alt="">
+          <div class="goods-wrapper">
+            <img class="goods__img" src="/img/logo/logo-bracelet.svg" alt="">
+          </div>
           <p class="title goods__title">Фитнес-браслеты</p>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="/img/logo/logo-watch.svg" alt="">
+          <div class="goods-wrapper">
+            <img class="goods__img" src="/img/logo/logo-watch.svg" alt="">
+          </div>
           <p class="title goods__title">Умные часы</p>
         </li>
         <li class="goods__item">
-          <img class="goods__img" src="/img/logo/logo-quad.svg" alt="">
+          <div class="goods-wrapper">
+            <img class="goods__img" src="/img/logo/logo-quad.svg" alt="">
+          </div>
           <p class="title goods__title">Квадрокоптеры</p>
         </li>
       </ul>
     </section>
+
+    <!-- <section class="goods">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="goods__list">
+        <li class="goods__item">
+          <div class="goods__img goods__img--vr">
+          </div>
+
+          <p class="title goods__title">Виртуальная реальность</p>
+        </li>
+        <li class="goods__item">
+          <div class="goods__img goods__img--monopod">
+          </div>
+
+          <p class="title goods__title">Моноподы для селфи</p>
+        </li>
+        <li class="goods__item">
+          <div class="goods__img goods__img--camera">
+          </div>
+
+          <p class="title goods__title">Экшн-камеры</p>
+        </li>
+        <li class="goods__item">
+          <div class="goods__img goods__img--braclet">
+          </div>
+
+          <p class="title goods__title">Фитнес-браслеты</p>
+        </li>
+        <li class="goods__item">
+          <div class="goods__img goods__img--watch">
+          </div>
+
+          <p class="title goods__title">Умные часы</p>
+        </li>
+        <li class="goods__item">
+          <div class="goods__img goods__img--quad">
+          </div>
+          <p class="title goods__title">Квадрокоптеры</p>
+        </li>
+      </ul>
+    </section> -->
 
     <!-- Доставка, гарантия, кредит -->
 
@@ -171,6 +224,7 @@
     <section class="rare-delivery">
       <div class="rare-delivery__logo"></div>
       <div class="rare-delivey__desc">Доставим редкий товар под заказ</div>
+      <div class="rare-delivery__info"></div>
     </section>
 
     <div class="about-contacts">
@@ -201,9 +255,11 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.
         </p>
         <h3 class="contacts__small-title">Интернет-магазин «Девайс»</h3>
-        <p class="contacts__text-bottom">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П. +7 (812) 812-12-12
-        </p>
+        <address class="contacts__address">
+          <p class="contacts__text-bottom">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П. +7 (812) 812-12-12
+          </p>
+        </address>
         <h3 class="contacts__small-title">Время работы</h3>
         <ul class="contacts__schedule">
           <li class="contacts__item">пн–пт: 10:00 до 22:00</li>
@@ -232,13 +288,18 @@
   <!-- FOOTER -->
 
   <footer class="page-footer">
+
     <img class="footer__logo" src="img/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
+
     <section class="footer__location">
       <h2 class="visually-hidden">Адрес</h2>
-      <p class="footer__text">
-        Санкт-Петербург, набережная реки Карповки, 5, литера П.
-      </p>
+      <address class="footer__address">
+        <p class="footer__text">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </p>
+      </address>
     </section>
+
     <section>
       <h2 class="visually-hidden">Доставка, гарантия и контакты</h2>
       <ul class="footer__list">
@@ -256,7 +317,7 @@
     <section class="footer__contacts">
       <h2 class="visually-hidden">Телефон</h2>
       <address class="footer__address">
-        Тел:<a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        Тел:<a class="footer__phone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
       </address>
     </section>
     <div class="footer__line"></div>

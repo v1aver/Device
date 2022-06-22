@@ -22,11 +22,35 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 body {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  color: #000000;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFE17F;
+  /* background-color: transparent; */
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .page-header {
@@ -52,23 +76,21 @@ body {
   line-height: 50px;
 }
 
-.goods__title {
-  font-size: 18px;
-  line-height: 24px;
-}
+/* Товары на главной */
 
 .gallery__text {
   color: #444444;
 }
 
-.button {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #FFE17F;
-  /* background-color: transparent; */
-  border: none;
-  text-transform: uppercase;
+.gallery__value {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.gallery__term {
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
 }
 
 /* Категории товаров */
@@ -78,20 +100,144 @@ body {
   height: 160px;
   background-color: #FFE17F;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .goods__img {
   display: block;
+  /* margin: auto; */
+}
+
+.goods__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* .goods__img {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.goods__img--vr {
+  background-image: url(../img/logo/logo-vr.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.goods__img--monopod {
+  background-image: url(../img/logo/logo-monopod.svg);
+  background-position: center 40px;
+  background-repeat: no-repeat;
+} */
+
+/* Доставка, гарантия, кредит */
+
+.delivery__text {
+  color: #444444;
 }
 
 /* Редкая доставка */
 
 .rare-delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #F0F0F0;
+}
+
+.rare-delivery__logo {
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  background-image: url(../img/icon/icon-fast-delivery.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rare-delivey__desc {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.rare-delivery__info {
+  width: 125px;
+  height: 100px;
+  background-image: url(../img/icon/icon-info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* О нас, Контакты */
+
+.about-contacts {
+  display: flex;
+}
+
+.about__text-top,
+.about__text-bottom {
+  color: #444444;
+}
+
+.about__list {
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Контакты */
+
+.contacts {
+  color: #444444;
+}
+
+.contacts__title {
+  color: #000000;
+}
+
+.contacts__address {
+  font-style: normal;
 }
 
 /* Подпишись на рассылку */
 
 .email {
   background-color: #F0F0F0;
+}
+
+/* FOOTER */
+
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__list {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__address {
+  text-decoration: underline;
+}
+
+.footer__phone {
+  color: #FFFFFF;
+  text-decoration: none;
 }
