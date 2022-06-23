@@ -212,8 +212,17 @@ body {
 /* FOOTER */
 
 .page-footer {
+  display: flex;
+  flex-direction: column;
   color: #FFFFFF;
   background-color: #444444;
+}
+
+.footer__container-top,
+.footer__container-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__address {
@@ -240,4 +249,10 @@ body {
 .footer__phone {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.footer__line {
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
 }
