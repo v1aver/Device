@@ -34,11 +34,19 @@ ul {
   list-style-type: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: Rubik, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   color: #000000;
 }
 
@@ -74,6 +82,10 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* Товары на главной */
