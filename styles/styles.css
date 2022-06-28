@@ -65,11 +65,44 @@ body {
   background-color: #FFE17F;
 }
 
+/* Навигация */
+
+.navigation {
+  width: 1040px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.navigation__top {
+  display: flex;
+}
+
+.navigation__search {
+  width: 359px;
+}
+
+.navigation__user {
+  display: flex;
+}
+
+.navigation__compare-cart {
+  width: 241px;
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation__main-links {
+  display: flex;
+  margin-left: auto ;
+}
+
 .navigation__bottom {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  display: flex;
   text-transform: uppercase;
 }
 
