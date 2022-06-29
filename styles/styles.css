@@ -78,11 +78,16 @@ body {
   display: flex;
 }
 
+.navigation__form {
+  margin-right: 25px;
+}
+
 .navigation__search {
   width: 359px;
 }
 
 .navigation__user {
+  width: 231px;
   display: flex;
 }
 
@@ -92,7 +97,12 @@ body {
   margin-left: auto;
 }
 
+.navigation__catalog {
+  width: 293px;
+}
+
 .navigation__main-links {
+  max-width: 599px;
   display: flex;
   margin-left: auto ;
 }
