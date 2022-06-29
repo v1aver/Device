@@ -61,6 +61,19 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   background-color: #FFE17F;
 }
@@ -131,7 +144,16 @@ body {
   flex-grow: 1;
 }
 
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* Товары на главной */
+
+.gallery {
+  display: flex;
+}
 
 .gallery__text {
   color: #444444;
@@ -148,16 +170,39 @@ body {
   color: #444444;
 }
 
+.gallery__btn-pagination {
+  display: flex;
+}
+
+.gallery__pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+}
+
 /* Категории товаров */
+
+.goods {
+  margin-bottom: 70px;
+}
 
 .goods-wrapper {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
-  
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.goods__list {
+  display: flex;
+}
+
+.goods__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .goods__img {
@@ -168,6 +213,7 @@ body {
 .goods__title {
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.3px;
 }
 
 /* .goods__img {
@@ -190,6 +236,27 @@ body {
 
 /* Доставка, гарантия, кредит */
 
+.delivery {
+  display: flex;
+  margin-bottom: 142px;
+}
+
+.delivery__list {
+  width: 120px;
+}
+
+.delivery__item {
+  margin-bottom: 55px;
+}
+
+.delivery__text-container {
+  display: flex;
+}
+
+.delivery__desc {
+  width: 448px;
+}
+
 .delivery__text {
   color: #444444;
 }
@@ -200,6 +267,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 117px;
   background-color: #F0F0F0;
 }
 
@@ -234,6 +302,23 @@ body {
   display: flex;
 }
 
+.about {
+  width: 520px;
+}
+
+.about__title {
+  position: relative;
+}
+
+.about__title::before {
+  position: absolute;
+  top: -40px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  content: "";
+}
+
 .about__text-top,
 .about__text-bottom {
   color: #444444;
@@ -247,11 +332,22 @@ body {
 /* Контакты */
 
 .contacts {
+  width: 532px;
   color: #444444;
 }
 
 .contacts__title {
+  position: relative;
   color: #000000;
+}
+
+.contacts__title::before {
+  position: absolute;
+  top: -40px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  content: "";
 }
 
 .contacts__address {
@@ -261,7 +357,33 @@ body {
 /* Подпишись на рассылку */
 
 .email {
+  padding: 0 140px;
+  padding-bottom: 56px;
   background-color: #F0F0F0;
+}
+
+.email__container {
+  display: flex;
+}
+
+.email__title {
+  margin-right: 252px;
+}
+
+.email__desc {
+  width: 560px;
+}
+
+.email__form-note {
+  display: flex;
+}
+
+.email__input {
+  width: 557px;
+}
+
+.email__button {
+  margin-right: 220px;
 }
 
 /* FOOTER */
@@ -289,6 +411,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  display: flex;
   text-transform: uppercase;
 }
 
@@ -310,6 +433,10 @@ body {
   width: 80px;
   height: 7px;
   background-color: #FFC700;
+}
+
+.footer__socials-list {
+  display: flex;
 }
 
 /* Каталог */
