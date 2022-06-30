@@ -75,6 +75,8 @@ body {
 }
 
 .page-header {
+  width: 1160px;
+  margin: 0 auto;
   background-color: #FFE17F;
 }
 
@@ -85,6 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  
 }
 
 .navigation__top {
@@ -356,13 +359,31 @@ body {
 
 /* Подпишись на рассылку */
 
-.email {
-  padding: 0 140px;
-  padding-bottom: 56px;
+/* .page-email__container {
   background-color: #F0F0F0;
 }
 
-.email__container {
+.email {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+} */
+
+/* !!!!!!!!!!!!!!!!!! */
+
+.email {
+  background-color: #f0f0f0;
+}
+
+.page-email__container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+}
+
+/* !!!!!!!!!!!!!!!!!! */
+
+.email__text-container {
   display: flex;
 }
 
@@ -393,6 +414,12 @@ body {
   flex-direction: column;
   color: #FFFFFF;
   background-color: #444444;
+}
+
+.page-footer__cotainer {
+  width: 1160px;
+  margin: 0 auto;
+  padding-bottom: 61px;
 }
 
 .footer__container-top,
@@ -440,6 +467,18 @@ body {
 }
 
 /* Каталог */
+
+.inner-header {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.inner-header__container {
+
+}
+
+.page-container__inner {
+background-color: #E5E5E5;}
 
 /* Breadcrumbs */
 
