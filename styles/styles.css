@@ -36,6 +36,7 @@ ul {
 
 html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -47,6 +48,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
+  padding-top: 40px;
   color: #000000;
 }
 
@@ -475,20 +477,13 @@ body {
 .inner-header {
   width: 1160px;
   margin: 0 auto;
+  padding-left: 60px;
+  background-color: red;
 }
 
 .inner-header__container {
   padding-left: 60px;
   padding-bottom: 35px;
-}
-
-.page-container__inner {
-  background-color: #E5E5E5;
-}
-
-.page-page {
-  width: 1160px;
-  margin: 0 auto;
 }
 
 /* Breadcrumbs */
@@ -508,14 +503,36 @@ body {
   text-decoration: none;
 }
 
+/* Фильр и сортировка */
+
+.page-container__inner {
+  background-color: #E5E5E5;
+}
+
+.page-page {
+  width: 1160px;
+  /* display: flex; */
+  margin: 0 auto;
+  /* padding-left: 60px; */
+  background-color: pink;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
 /* Сортировка */
 
 .sorting {
   font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 19px;
+  width: 1160px;
   display: flex;
   justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 40px;
+  /* background-color: tomato; */
   text-transform: uppercase;
 }
 
@@ -526,6 +543,11 @@ body {
 }
 
 /* Фильтр */
+
+.filter__form {
+  width: 320px;
+  padding-left: 60px;
+}
 
 .filter__title {
   font-weight: 700;
@@ -538,6 +560,10 @@ body {
 }
 
 /* Список товаров */
+
+.catalog-right-column {
+  width: 840px;
+}
 
 .product__link {
   color: #000000;
