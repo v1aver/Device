@@ -293,8 +293,25 @@ body {
 /* Доставка, гарантия, кредит */
 
 .delivery {
-  display: flex;
+  position: relative;
+  /* display: flex; */
   margin-bottom: 142px;
+}
+
+.delivery::after {
+  position: absolute;
+  bottom: -72px;
+  width: 100%;
+  height: 289px;
+  background-color: #F0F0F0;
+  z-index: -1;
+  content: "";
+}
+
+.delivery__container {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .delivery__list {
@@ -322,8 +339,8 @@ body {
 }
 
 .delivery__title {
-  margin-top: 72px;
-  margin-bottom: 34px;
+  /* margin-top: 72px;*/
+  /* margin-bottom: 34px;  */
 }
 
 .delivery__text {
@@ -374,10 +391,12 @@ body {
 
 .about-contacts {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .about {
   width: 520px;
+  margin-right: 108px;
 }
 
 .about__title {
@@ -403,6 +422,7 @@ body {
 .about__list {
   font-weight: 700;
   color: #000000;
+  margin-bottom: 40px;
 }
 
 /* Контакты */
@@ -430,6 +450,10 @@ body {
   font-style: normal;
 }
 
+.contacts__list {
+  margin-bottom: 40px;
+}
+
 /* Подпишись на рассылку */
 
 /* .page-email__container {
@@ -451,6 +475,7 @@ body {
 .page-email__container {
   width: 1160px;
   margin: 0 auto;
+  padding-top: 64px;
   padding-bottom: 56px;
 }
 
@@ -458,14 +483,18 @@ body {
 
 .email__text-container {
   display: flex;
+  margin-bottom: 144px;
 }
 
 .email__title {
+  margin: 0;
   margin-right: 252px;
 }
 
 .email__desc {
   width: 560px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .email__form-note {
@@ -492,6 +521,7 @@ body {
 .page-footer__cotainer {
   width: 1160px;
   margin: 0 auto;
+  padding-top: 62px;
   padding-bottom: 61px;
 }
 
@@ -611,7 +641,7 @@ body {
   line-height: 30px;
 }
 
-/* Фильтр */
+/*! Фильтр */
 
 .filter__form {
   width: 320px;
@@ -628,7 +658,7 @@ body {
   line-height: 19px;
 }
 
-/* Список товаров */
+/*! Список товаров */
 
 .catalog-right-column {
   width: 840px;
@@ -649,7 +679,7 @@ body {
   color: #444444;
 }
 
-/* Пагинация */
+/*! Пагинация */
 
 .pagination__button {
   font-family: Raleway;
