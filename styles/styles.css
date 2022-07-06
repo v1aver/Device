@@ -760,8 +760,13 @@ body {
   font-size: 16px;
   line-height: 18px;
   margin-bottom: 44px;
+  background-color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .pagination__link {
@@ -777,6 +782,7 @@ body {
   font-family: Raleway;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 1.5px;
