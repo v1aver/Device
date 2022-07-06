@@ -31,7 +31,6 @@
 ul {
   margin: 0;
   padding: 0;
-  /* list-style-type: none; */
 }
 
 html {
@@ -82,7 +81,7 @@ body {
   background-color: #FFE17F;
 }
 
-/* Навигация */
+/*! Навигация */
 
 .navigation {
   width: 1040px;
@@ -172,7 +171,7 @@ body {
   margin: 0 auto;
 }
 
-/* Товары на главной */
+/*! Товары на главной */
 
 .gallery {
   position: relative;
@@ -237,7 +236,7 @@ body {
   
 }
 
-/* Категории товаров */
+/*! Категории товаров */
 
 .goods {
   margin-bottom: 70px;
@@ -352,7 +351,7 @@ body {
   margin-left: auto;
 }
 
-/* Редкая доставка */
+/*! Редкая доставка */
 
 .rare-delivery {
   display: flex;
@@ -387,7 +386,7 @@ body {
   background-position: center;
 }
 
-/* О нас, Контакты */
+/*! О нас, Контакты */
 
 .about-contacts {
   display: flex;
@@ -425,7 +424,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Контакты */
+/*! Контакты */
 
 .contacts {
   width: 532px;
@@ -454,19 +453,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Подпишись на рассылку */
-
-/* .page-email__container {
-  background-color: #F0F0F0;
-}
-
-.email {
-  width: 1160px;
-  margin: 0 auto;
-  padding-bottom: 56px;
-} */
-
-/* !!!!!!!!!!!!!!!!!! */
+/*! Подпишись на рассылку */
 
 .email {
   background-color: #f0f0f0;
@@ -478,8 +465,6 @@ body {
   padding-top: 64px;
   padding-bottom: 56px;
 }
-
-/* !!!!!!!!!!!!!!!!!! */
 
 .email__text-container {
   display: flex;
@@ -606,7 +591,7 @@ body {
   margin-right: 0;
 }
 
-/* Каталог */
+/*! Каталог */
 
 .inner-header {
   position: relative;
@@ -614,7 +599,8 @@ body {
   margin: 0 auto;
   padding-top: 73px;
   padding-left: 60px;
-  background-color: red;
+  padding-bottom: 35px;
+  /* background-color: red; */
 }
 
 .inner-header::before {
@@ -629,12 +615,16 @@ body {
 
 .inner-header__title {
   margin: 0;
+  margin-bottom: 16px;
 }
 
-/* Breadcrumbs */
+/*! Breadcrumbs */
 
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs__item {
@@ -648,7 +638,7 @@ body {
   text-decoration: none;
 }
 
-/* Фильр и сортировка */
+/*! Фильр и сортировка */
 
 .page-container__inner {
   background-color: #E5E5E5;
@@ -659,14 +649,14 @@ body {
   /* display: flex; */
   margin: 0 auto;
   /* padding-left: 60px; */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .catalog-filter {
   display: flex;
 }
 
-/* Сортировка */
+/*! Сортировка */
 
 .sorting {
   font-family: Raleway, sans-serif;
@@ -675,10 +665,14 @@ body {
   width: 1160px;
   display: flex;
   justify-content: space-between;
-  padding-left: 60px;
-  padding-right: 40px;
+  align-items: center;
+  padding: 22px 40px 22px 60px;
   /* background-color: tomato; */
   text-transform: uppercase;
+}
+
+.sorting__subtitle {
+  margin: 0;
 }
 
 .sorting__control {
@@ -694,9 +688,18 @@ body {
   padding-left: 60px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.filter__group:last-of-type {
+  margin-bottom: 45px;
+}
+
 .filter__title {
   font-weight: 700;
   line-height: 20px;
+}
+
+.filter__list {
+  list-style-type: none;
 }
 
 .filter__control {
@@ -708,6 +711,14 @@ body {
 
 .catalog-right-column {
   width: 840px;
+  padding: 70px 40px 78px 40px;
+  background-color: #FFFFFF;
+}
+
+.product__list {
+  margin-bottom: 44px;
+  /* background-color: #FFFFFF; */
+  list-style-type: none;
 }
 
 .product__link {
@@ -727,10 +738,28 @@ body {
 
 /*! Пагинация */
 
+.pagination {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination__numbers {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #EBEBEB;
+}
+
+.pagination-list {
+  display: flex;
+  list-style-type: none;
+}
+
 .pagination__button {
   font-family: Raleway;
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 44px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
