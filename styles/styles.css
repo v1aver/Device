@@ -28,10 +28,10 @@
   box-sizing: inherit;
 }
 
-ul {
+/* ul {
   margin: 0;
   padding: 0;
-}
+} */
 
 html {
   height: 100%;
@@ -176,7 +176,7 @@ body {
 .gallery {
   position: relative;
   display: flex;
-  margin-bottom: 108px;
+  margin-bottom: 70px;
 }
 
 .gallery::before {
@@ -200,10 +200,13 @@ body {
   content: "01";
 }
 
+.gallery__desc {
+  margin-left: 40px;
+}
+
 .gallery__title {
   margin-top: 121px;
   margin-bottom: 29px;
-  margin-left: 40px;
 }
 
 .gallery__text {
@@ -212,9 +215,11 @@ body {
 }
 
 .gallery__features {
+  /* width: 320px; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   gap: 0 20px;
+  justify-content: start;
   margin: 0;
 }
 
@@ -228,7 +233,6 @@ body {
 .gallery__term {
   font-size: 16px;
   line-height: 30px;
-
   color: #444444;
 }
 
@@ -726,6 +730,9 @@ body {
 }
 
 .product__list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 44px 40px;
   margin-bottom: 44px;
   /* background-color: #FFFFFF; */
   list-style-type: none;
@@ -736,9 +743,21 @@ body {
   text-decoration: none;
 }
 
+.product__img {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.product__desc {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__title {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
 }
 
 .product__price {
@@ -816,3 +835,65 @@ body {
   border: 2px solid #000000;
   text-align: center;
 } */
+
+
+/* .appointment-form {
+  display: grid;
+  grid-template-columns: 114px 74px 208px;
+  gap: 19px 17px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.appointment-form-name {
+  grid-column: 1/-1;
+}
+
+.appointment-submit {
+  grid-column: 1/-1;
+  justify-self: start;
+} */
+
+.card__wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: tomato;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  gap: 10px 20px;
+}
+
+.card__item {
+  background-color: #fff;
+  /* padding-bottom: 10px; */
+}
+
+.card__desc {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card-button {
+  text-align: center;
+  margin-top: auto;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+}
