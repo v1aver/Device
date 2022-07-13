@@ -55,12 +55,25 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFE17F;
-  /* background-color: transparent; */
+  /* background-color: #FFE17F; */
+  padding: 0;
+  background-color: transparent;
+  letter-spacing: 3.3px;
   border: none;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/* .button::before {
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  width: 110%;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+  content: "";
+} */
 
 .visually-hidden {
   position: absolute;
@@ -94,6 +107,7 @@ body {
 .navigation__top {
   display: flex;
   align-items: center;
+  margin-bottom: 45px;
 }
 
 .navigation__form {
@@ -121,7 +135,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-radius: 0 50px 50px 0;
-  border: 2px solid #ff0000;
+  border: 2px solid #000000;
   background-color: transparent;
   cursor: pointer;
 }
@@ -135,7 +149,7 @@ body {
 .navigation__user {
   width: 231px;
   /* display: flex; */
-  background-color: green;
+  /* background-color: green; */
   
 }
 
@@ -143,19 +157,18 @@ body {
   width: 241px;
   /* display: flex; */
   margin-left: auto;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .navigation__catalog {
   width: 293px;
-  background-color: pink;
 }
 
 .navigation__main-links {
   max-width: 599px;
   /* display: flex; */
   margin-left: auto;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .navigation__bottom {
@@ -172,6 +185,20 @@ body {
   color: #000000;
   text-decoration: none;
   padding: 2px;
+}
+
+.navigation__link--catalog {
+  position: relative;  
+}
+
+.navigation__link--catalog::after {
+  position: absolute;
+  top: -15px;
+  right: -70px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icon/icon-catalog-btn.svg);
+  content: "";
 }
 
 .navigation__link:focus {
@@ -234,6 +261,23 @@ body {
 .gallery__text {
   color: #444444;
   margin-bottom: 61px;
+}
+
+.gallery__button-more {
+  position: relative;
+}
+
+.gallery__button-more::before {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  width: 220px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFE17F;
+  z-index: -1;
+  content: "";
 }
 
 .gallery__features {
@@ -339,7 +383,7 @@ body {
   width: 100%;
   height: 289px;
   background-color: #F0F0F0;
-  z-index: -1;
+  z-index: -2;
   content: "";
 }
 
@@ -351,6 +395,9 @@ body {
 
 .delivery__list {
   width: 280px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   margin-right: 106px;
   padding-top: 64px;
   padding-bottom: 64px;
@@ -361,6 +408,37 @@ body {
 .delivery__item:not(:last-child) {
   margin-bottom: 55px;
 }
+
+.delivery__button {
+  position: relative;
+}
+
+.delivery__button::before {
+  position: absolute;
+  top: 25%;
+  left: -25%;
+  width: 160px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  background-color: #FFE17F;
+  z-index: -1;
+  content: "";
+}
+
+/* .delivery__button--active {
+  position: relative;
+  color: #FFFFFF;
+}
+
+.delivery__button--active {
+  position: absolute;
+  width: 280px;
+  height: 40px;
+  background-color: #000000;
+  z-index: -1;
+  content: "";
+} */
 
 .delivery__text-container {
   width: 694px;
@@ -495,7 +573,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.page-email__container {
+.email__container {
   width: 1160px;
   margin: 0 auto;
   padding-top: 64px;
@@ -519,16 +597,37 @@ body {
   color: #444444;
 }
 
-.email__form-note {
+.email__form-wrapper {
   display: flex;
+  align-items: center;
+}
+
+.email__form {
+  display: grid;
+  grid-template-columns: 557px 253px;
+  grid-template-rows: 57px;
+  margin-right: 220px;
 }
 
 .email__input {
-  width: 557px;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
 }
 
 .email__button {
-  margin-right: 220px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  border: 3px solid #C4C4C4;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .email__note {
