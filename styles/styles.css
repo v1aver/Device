@@ -396,13 +396,30 @@ body {
   margin-bottom: 70px;
 }
 
-.goods-wrapper {
+.goods__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.goods__link:focus {
+  border: 2px solid #AF4FFF;
+}
+
+.goods__link:active {
+  opacity: 0.33;
+}
+
+.goods__img-wrapper {
   width: 160px;
   height: 160px;
   background-color: #FFE17F;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.goods__img-wrapper:hover {
+  background-color: #FFC700;
 }
 
 .goods__list {
@@ -416,7 +433,6 @@ body {
 
 .goods__img {
   display: block;
-  /* margin: auto; */
 }
 
 .goods__title {
