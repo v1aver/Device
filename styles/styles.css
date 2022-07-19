@@ -166,8 +166,21 @@ body {
   margin-left: auto;
 }
 
-.navigation__icon {
-  margin-right: 11px;
+.navigation__item {
+  position: relative;
+}
+
+.navigation__compare-cart .navigation__item:nth-child(2):before {
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/icon/icon-cart-number.svg);
+  background-repeat: no-repeat;
+  /* background-size: 21px 21px; */
+  z-index: 1;
+  content: "";
 }
 
 .navigation__link {
@@ -175,6 +188,10 @@ body {
   display: block;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation__icon {
+  margin-right: 11px;
 }
 
 .navigation__compare-cart .navigation__link:nth-child(2):before {
