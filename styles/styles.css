@@ -103,6 +103,7 @@ body {
   /* flex-direction: column; */
   margin: 0 auto;
   padding-top: 7px;
+  background-color: tomato;
 }
 
 .navigation__logo {
@@ -156,7 +157,7 @@ body {
 .navigation__user {
   width: 241px;
   /* display: flex; */
-  
+
 }
 
 .navigation__compare-cart {
@@ -226,7 +227,7 @@ body {
 
 .navigation__main-links .navigation__item:not(:last-child) {
   margin-right: 48px;
-} 
+}
 
 .navigation__bottom {
   font-family: Raleway, sans-serif;
@@ -355,7 +356,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  
+
 }
 
 /*! Категории товаров */
@@ -995,7 +996,7 @@ body {
   text-decoration: none;
 }
 
-.pagination__prev, 
+.pagination__prev,
 .pagination__next {
   font-family: Raleway;
   font-size: 18px;
