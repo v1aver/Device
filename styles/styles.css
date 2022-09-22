@@ -1047,3 +1047,30 @@ body {
   grid-column: 1/-1;
   justify-self: start;
 } */
+
+
+
+.line {
+  position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    z-index: -1;
+  }
+
+  .line-container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .line__title {
+    padding: 0 40px;
+    background-color: #fff;
+    display: inline-block;
+  }
